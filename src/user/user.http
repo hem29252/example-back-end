@@ -1,0 +1,30 @@
+### Post
+POST http://localhost:3000/user
+Content-Type: application/json
+Authorization: Bearer ffgdfdssdfsdffhadsfsdakflhsjdafhaslkfhklsadfh
+
+{
+  "name": "user1",
+  "email": "user1@email.com",
+  "password": "123"
+}
+
+### update
+PATCH http://localhost:3000/user/2
+Content-Type: application/json
+
+{
+  "name": "user2",
+  "email": "user2@email.com",
+  "password": "123"
+}
+
+### delete
+DELETE http://localhost:3000/user/3
+
+### Get all
+GET http://localhost:3000/user
+Authorization: Bearer ffgdfdssdfsdffhadsfsdakflhsjdafhaslkfhklsadfh
+
+### Get One
+GET http://localhost:3000/user/3
